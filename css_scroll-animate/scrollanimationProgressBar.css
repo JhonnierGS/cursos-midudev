@@ -1,0 +1,22 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+#progress{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1em;
+  background: #f39c12;
+  z-index: 9999;
+
+  animation: progressGrow auto linear;
+  animation-timeline: scroll(root block);
+}
+
+@keyframes progressGrow {
+  from { width: 0%; }
+  to {width: 100%; }
+}
